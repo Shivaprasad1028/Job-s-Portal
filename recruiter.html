@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2892cfcd4a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.umd.min.js
+    "></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+    <!-- Logo -->
+    
+    
+      
+   
+    
+    <!-- Navigation menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+            <button class="Dashboard" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars fa-2x"></i>
+              </button><img src="vercel.svg"  alt="Job Portal Logo" width="5%" >
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Recruiter Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Jobs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Find Job</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Post Job</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item resume"> <button class="resume-btn">
+                <a class="nav-link" href="resumecv.html">Resume Builder</a></button>
+              </li>
+            </ul>
+            <span class="navbar-text">
+               Login/Register
+               
+              </span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </nav>
+      
+   
+      
+      <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">DashBoard</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+         <ul>
+              <li>
+                <a href="#"> Manage Job postings</a>
+            </li>
+            <li>
+                <a href="#"> View Applicant</a>
+            </li>
+            <li>
+                <a href="#">Billings and Subscription</a>
+            </li>
+            <li>
+                <a href="#"> Manage Account Settings</a>
+            </li>
+         </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+      
+       
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <div class="row">
+    
+    <div class="col-md-9 fw-bold fs-3">DashBoard</div>
+   <div class="row">
+    <div class="col-md-3">
+    <div class="card text-bg-light mb-3" style="max-width:35rem;">
+      <div class="card-header">Major percentage of applicants works</div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">
+          <li>Software Engineer</li>
+          <li> Full Stack Developer</li>
+          <li>Data Science</li>
+        </p>
+         
+      
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Popular Categories</div>
+      <div class="card-body">
+        <canvas class="my-chart"></canvas>
+      </div>
+    </div>
+   
+   </div>
+   <div class="col-md-3">
+    <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Few of the applicants works</div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"><li>UX Designer</li>
+          <li> Frond-end Developer</li>
+          <li>Back-end Developer</li>
+        </p>
+      </div>
+    </div>
+
+    
+       
+      
+     </div>
+    
+   </div>
+   <div class="charts">
+    <div class="card text-bg-light mb-3 chartcard" style="max-width: 40rem;">
+      <div class="card-header"><i class="fa-solid fa-chart-simple"> </i>  Applicants Stats</div>
+      <div class="card-body">
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+       
+      </div>
+    </div>
+    <div class="arrow">
+      <!-- Back to Top -->
+      <a href="#" class="scrollup"><i class="fa-solid fa-arrow-up"></i></a>
+  
+  </div>
+  
+
+   <script src="script.js"></script>
+   <script src="chart.js"></script>
+</body>
+</html>
